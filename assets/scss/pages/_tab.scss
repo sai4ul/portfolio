@@ -1,0 +1,713 @@
+// Tabs Button Style
+.tab-button{
+
+    // Tab Button style One
+    &.style-one{
+        nav{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-bottom: 10px;
+            padding-bottom: 0px;
+            position: relative;
+            @media #{$xs}{
+                border: 0;
+            }
+            .nav-tabs{
+                margin-bottom: 10px;
+                padding-bottom: 0px;
+                border: 0;
+                .nav-item {
+                    display: block;
+                    @media #{$xs}{
+                        font-size: 18px;
+                    }
+                }
+                .nav-link {
+                    color: var(--heading-color-two);
+                    background: var(--section-bg-three);
+                    border-radius: var(--radius-three);
+                    font-size: 15px;
+                    font-weight: 400;
+                    border: 0;
+                    margin-bottom: 13px;
+                    display: block;
+                    padding: 7px 20px;
+                    text-align: center;
+                    margin: 0 5px;
+
+                    @media #{$lg}{
+                        padding: 14px 18px;
+                    }
+                    @media #{$sm}{
+                        padding: 7px 18px;
+                    }
+                    &:first-child{
+                        margin-left: 0px;
+                    }
+                    @media #{$xs}{
+                        border-bottom: 0;
+                        padding: 13px 13px;
+                        font-size: 13px;
+                        margin-bottom: 10px;
+                    }
+                    &.active {
+                        color:var(--white);
+                        background: var(--main-color-one);
+                    }
+                    &:hover {
+                        color:var(--white);
+                        background: var(--main-color-one);
+                    }
+                }
+            }
+        }
+    }
+    // Tab button style Tow
+    &.style-tow{
+        nav{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+            padding-bottom: 0px;
+            position: relative;
+            border-bottom: 1px solid var(--border-color-two);
+            @media #{$xs}{
+              border: 0;
+            }
+            .nav-tabs{
+              border: 0;
+                .nav-item {
+                    display: block;
+                    @media #{$xs}{
+                    font-size: 18px;
+                    }
+                }
+                .nav-link {
+                    padding: 8px 2px;
+                    border-bottom: 2px solid transparent;
+                    color: var(--heading-color-two);
+                    font-size: 15px;
+                    font-weight: 400;
+                    border: 0;
+                    margin-bottom: 13px;
+                    display: block;
+                    text-align: center;
+                    margin: 0 5px;
+                    @media #{$xs}{
+                        border-bottom: 0;
+                        margin-right: 0;
+                        padding: 10px 12px;
+                    }
+                    &:last-child{
+                        margin-right: 0;
+                    }
+                    &.active {
+                        color: var(--main-color-one);
+                        border-bottom: 2px solid var(--main-color-one);
+                        background: none;
+                        @media #{$xs}{
+                            border-bottom: 0;
+                        }
+                       
+                    }
+                    &:hover {
+                        border-bottom: 2px solid var(--main-color-one);
+                        @media #{$xs}{
+                            border-bottom: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // Tabs Button Style Three
+    &.style-three{
+        nav{
+            display: flex;
+            justify-content: start;
+            margin-bottom: 20px;
+            padding-bottom: 0px;
+            .nav-tabs{
+            border: 1px solid var(--main-color-one);
+            border-radius:4px;
+                .nav-item {
+                    display: block;
+                    @media #{$xs}{
+                    font-size: 18px;
+                    }
+                }
+                .nav-link {
+                    color: var(--heading-color-two);
+                    background: var(--white);
+                    font-size: 15px;
+                    font-weight: 400;
+                    border: 0;
+                    padding: 7px 20px;
+                    border-radius: 4px 0 0 4px;
+                    text-transform: capitalize;
+                    margin: 0;
+
+                    &:last-child{
+                        border-radius: 0px 4px 4px 0;
+                    }
+                    &.active {
+                        color: var(--white);
+                        background: var(--main-color-one);
+                        border: 0;
+                        @media #{$xs}{
+                            border-bottom: 0;
+                        }
+                    
+                    }
+                    &:hover {
+                        border: 0;
+                        @media #{$xs}{
+                            border-bottom: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // Tabs Button Style Four
+    &.style-four{
+        .nav-tabs{
+            margin-bottom: 25px;
+            padding-bottom: 0px;
+            border: 0;
+            .nav-item {
+                display: block;
+                @media #{$xs}{
+                    font-size: 18px;
+                }
+            }
+            .nav-link {
+                position: relative;
+                padding: 7px 20px;
+                border: 1px solid var(--border-color-two);
+                color: var(--heading-color-two);
+                font-size: 15px;
+                font-weight: 400;
+
+                margin-bottom: 13px;
+                display: block;
+                text-align: center;
+                margin: 0 5px;
+                border-radius: var(--radius-three);
+                &:first-child{
+                    margin-left: 0px;
+                }
+                &::after {
+                    @include transition(.2s);
+                    background: var(--main-color-one);
+                    position: absolute;
+                    height: 10px;
+                    width: 10px;;
+                    content: "";
+                    left: 0;
+                    right: 0;
+                    margin: auto;
+                    bottom: -6px;
+                    -webkit-transform: rotate(45deg);
+                    -ms-transform: rotate(45deg);
+                    transform: rotate(45deg);
+                    opacity: 0;
+                    visibility: hidden;
+                }
+                @media #{$xs}{
+                    border-bottom: 0;
+                    padding: 13px 13px;
+                    font-size: 13px;
+                    margin-bottom: 10px;
+                }
+                &.active {
+                    color: var(--white);
+                    background: var(--main-color-one);
+                    border-color: transparent ;
+                    &::after {
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                }
+                &:hover {
+    
+                }
+    
+            }
+        }
+    }
+
+    // Tabs Button Style Five
+    &.style-five{
+        .nav-tabs{
+            margin-bottom: 10px;
+            padding-bottom: 0px;
+            // justify-content: center;
+            border: 0;
+            .nav-item {
+                display: block;
+                @media #{$xs}{
+                    font-size: 18px;
+                }
+            }
+            .nav-link {
+                color: var(--heading-color-two);
+                background: var(--section-bg-three);
+                border-radius: var(--radius-three);
+                font-size: 15px;
+                font-weight: 400;
+                border-radius: 0;
+                display: block;
+                padding: 7px 20px;
+                text-align: center;
+                text-align: center;
+                border-right: 1px solid var(--main-color-one);
+                margin-bottom: 13px;
+
+                &:last-child{
+                    border-right: 0;
+                }
+
+                width: 16.66%;
+
+                @media #{$lg}{
+                    width: 25.33%;
+                }
+                @media #{$md}{
+                    width: 33.33%;
+                }
+                @media #{$sm}{
+                    width: 33.33%;
+                }
+                @media #{$xs}{
+                    width: 50%;
+                }
+                &.active {
+                    color: var(--white);
+                    background: var(--main-color-one);
+                    position: relative;
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        background: var(--main-color-one);
+                        width: 100%;
+                        height: 8px;
+                        top: -8px;
+                        right: 0px;
+                        left: 0;
+                        z-index: 1;
+                        border-radius: 4px 4px 0 0;
+                    }
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        background: var(--main-color-one);
+                        width: 100%;
+                        height: 8px;
+                        bottom: -8px;
+                        right: 0px;
+                        z-index: 1;
+                        border-radius: 0 0 4px 4px;
+                    }
+                }
+                &:hover {
+
+                }
+
+            }
+        }
+    }
+
+    // Tabs Button Style Five
+    &.style-six{
+        nav{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-bottom: 10px;
+            padding-bottom: 0px;
+            position: relative;
+            @media #{$xs}{
+              border: 0;
+            }
+            .nav-tabs{
+                margin-bottom: 10px;
+                padding-bottom: 0px;
+                border: 0;
+                .nav-item {
+                    display: block;
+                    @media #{$xs}{
+                        font-size: 18px;
+                    }
+                }
+                .nav-link {
+                    padding: 7px 20px;
+                    border: 1px solid var(--border-color-two);
+                    color: var(--heading-color-two);
+                    font-size: 15px;
+                    font-weight: 400;
+
+                    margin-bottom: 13px;
+                    display: block;
+                    text-align: center;
+                    margin: 0 5px;
+                    border-radius: var(--radius-three);
+                    @media #{$lg}{
+                        padding: 14px 18px;
+                    }
+                    @media #{$sm}{
+                        padding: 7px 18px;
+                    }
+                    &:first-child{
+                        margin-left: 0px;
+                    }
+                    @media #{$xs}{
+                        border-bottom: 0;
+                        padding: 13px 13px;
+                        font-size: 13px;
+                        margin-bottom: 10px;
+                    }
+                    &.active {
+                        color: var(--white);
+                        background: var(--main-color-one);
+                        border: 1px solid transparent;
+                    }
+                    &:hover {
+                        color: var(--white);
+                        background: var(--main-color-one);
+                        border: 1px solid transparent;
+                    }
+                }
+            }
+        }
+    }
+    // Tabs Button Style Five
+    &.style-seven{
+        nav{
+            margin-bottom: 10px;
+            padding-bottom: 0px;
+            position: relative;
+            @media #{$xs}{
+            border: 0;
+            }
+            .nav-tabs{
+                display: block;
+                border: 0;
+                margin-bottom: 10px;
+                .nav-item {
+                }
+                .nav-link {
+                    @include flexbox();
+                    @include justify-content(space-between);
+                    @include align-items(center);
+    
+                    color: var(--heading-color-two);
+                    background: var(--section-bg-three);
+                    font-size: 15px;
+                    font-weight: 400;
+                    border: 0;
+                    border-radius: 4px;
+                    margin-bottom: 13px;
+                    display: block;
+                    padding: 7px 20px;
+                    text-align: center;
+    
+                    @media #{$xs}{
+                        border-bottom: 0;
+                        margin-right: 0;
+                        width: auto;
+                    }
+                    &:last-child{
+                        margin-right: 0;
+                    }
+                    &.active {
+                        background: var(--main-color-one);
+                        color: $white;
+                        @media #{$xs}{
+                            border-bottom: 0;
+                        }
+                    
+                    }
+                    &:hover {
+                        @media #{$xs}{
+                            border-bottom: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+   // Tabs Button Style Five
+    &.style-eight{
+        nav{
+
+            .nav-tabs{
+                margin-bottom: 15px;
+                padding-bottom: 0px;
+                position: relative;
+                border: 0;
+                .nav-item {
+
+                }
+                .nav-link {
+                    position: relative;
+                    background: #f5f5fd;
+                    padding: 9px 29px;
+                    border: 0;
+                    color: var(--heading-color-two);
+                    background: var(--section-bg-three);
+                    border-radius: var(--radius-three);
+                    font-size: 15px;
+                    font-weight: 400;
+                    display: block;
+                    padding: 7px 20px;
+                    text-align: center;
+                    text-align: center;
+                    margin-bottom: 13px;
+                   
+                    @media #{$xs}{
+                        margin-bottom: 10px;
+                    }
+                    &::after {
+                        position: absolute;
+                        height: 15px;
+                        width: 15px;
+                        background: var(--main-color-one);
+                        position: absolute;
+                        height: 10px;
+                        width: 10px;
+                        content: "";
+                        left: 0;
+                        right: 0;
+                        margin: auto;
+                        bottom: -5px;
+                        -webkit-transform: rotate(45deg);
+                        -ms-transform: rotate(45deg);
+                        transform: rotate(45deg);
+                        opacity: 0;
+                        visibility: hidden;
+                    }
+            
+                    &:last-child{
+                        margin-right: 0;
+                    }
+                    &.active {
+                        background: var(--main-color-one);
+                        color: #fff;
+                        @include transition(.0s);
+                        &:after {
+                            opacity: 1;
+                            visibility: visible;
+                        }
+                    
+                    }
+                    
+                }
+            }
+        }
+    }
+    // Tabs Button Style Five
+    &.style-nine{
+        
+        .nav-tabs{
+            margin-bottom: 10px;
+            padding-bottom: 0px;
+            border: 0;
+            .nav-item {
+                display: block;
+                @media #{$xs}{
+                    font-size: 18px;
+                }
+            }
+            .nav-link {
+                
+                @include transition(.1s);
+                text-align: center;
+                min-width: 100px;
+
+                color: var(--heading-color-two);
+                background: var(--section-bg-three);
+                border-radius: var(--radius-three);
+                font-size: 15px;
+                font-weight: 400;
+                border: 0;
+                display: block;
+                padding: 7px 20px;
+                text-align: center;
+                margin: 0 5px;
+                margin-bottom: 13px;
+                @media #{$xl}{
+                    &:first-child{
+                        margin-left: 0;
+                    }
+                }
+                @media #{$large1}{
+                    padding: 18px 10px;
+                    width: 178px;
+                    margin-left: 7px
+                }
+                @media #{$sm}{
+                    padding: 10px 9px;
+                    font-size: 10px;
+                }
+                @media #{$xs}{
+                    width: 137px;
+                    margin-left: 10px;
+                    padding: 20px 10px;
+                }
+                
+                i{
+                    color: var(--paragraph-color-one);
+                    font-size: 31px;
+                    margin-bottom: 5px;
+                }
+
+                h6 {
+                    color: var(--heading-color-two);
+                    text-transform: capitalize;
+                    font-size: 15px;
+                    font-weight: 400;
+                    margin: 0;
+                    margin-top: 0px;
+                    @media #{$xs}{
+                        font-size: 15px;
+                    }
+                }
+                &.active {
+                    color:#fff;
+                    background:var(--main-color-one);
+                    border-color: transparent;
+                    &::after {
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                    i{
+                        color: var(--white);
+                    }
+                    h6{
+                        color: #fff;
+                    }
+                    img.block-img {
+                        opacity: 1 ;
+                        visibility: visible ;
+                    }
+                    .active-img {
+                        opacity: 1 !important;
+                        visibility: visible !important;
+                        overflow: hidden;
+                    }
+                }
+                &:hover {
+
+                }
+
+            }
+        }
+    }
+    // Tabs Button Style Five
+    &.style-ten{
+        
+        .nav-tabs{
+            margin-bottom: 10px;
+            padding-bottom: 0px;
+            border: 0;
+            .nav-item {
+                display: block;
+                @media #{$xs}{
+                    font-size: 18px;
+                }
+            }
+            .nav-link {
+                
+                @include transition(.1s);
+                text-align: center;
+                margin: 0 6px;
+                min-width: 100px;
+                color: var(--heading-color-two);
+                background: none;
+                border-radius: var(--radius-three);
+                border: 1px solid var(--border-color-two);
+
+                font-size: 15px;
+                font-weight: 400;
+                display: block;
+                padding: 7px 20px;
+                text-align: center;
+                margin: 0 5px;
+                margin-bottom: 13px;
+                @media #{$xl}{
+                    &:first-child{
+                        margin-left: 0;
+                    }
+                }
+                @media #{$large1}{
+                    padding: 18px 10px;
+                    width: 178px;
+                    margin-left: 7px
+                }
+                @media #{$sm}{
+                    padding: 10px 9px;
+                    font-size: 10px;
+                }
+                @media #{$xs}{
+                    width: 137px;
+                    margin-left: 10px;
+                    padding: 20px 10px;
+                }
+                
+                i{
+                    color: var(--paragraph-color-one);
+                    font-size: 31px;
+                    margin-bottom: 5px;
+                }
+
+                h6 {
+                    color: var(--heading-color-two);
+                    text-transform: capitalize;
+                    font-size: 15px;
+                    font-weight: 400;
+                    margin: 0;
+                    margin-top: 0px;
+                    @media #{$xs}{
+                        font-size: 15px;
+                    }
+                }
+                &.active {
+                    color:#fff;
+                    background:var(--main-color-one);
+                    &::after {
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                    i{
+                        color: var(--white);
+                    }
+                    h6{
+                        color: #fff;
+                    }
+                    img.block-img {
+                        opacity: 1 ;
+                        visibility: visible ;
+                    }
+                    .active-img {
+                        opacity: 1 !important;
+                        visibility: visible !important;
+                        overflow: hidden;
+                    }
+                }
+                &:hover {
+
+                }
+
+            }
+        }
+    }}
+
+
+
+

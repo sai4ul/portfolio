@@ -1,0 +1,775 @@
+
+/*--------------- ---- Responsive Device Variable --------------------------*/
+
+    $xxl: 'only screen and (min-width: 1400px) and (max-width: 1599px)';
+    $xl: 'only screen and (min-width: 1200px) and (max-width: 1399px)';
+    $lg :'only screen and (min-width: 992px) and (max-width: 1199px)';
+    $md:'only screen and (min-width: 768px) and (max-width: 991px)';
+    $sm: 'only screen and (min-width: 576px) and (max-width: 767px)';
+    $xs:'(max-width: 575px)';
+    $inc25: 'only screen and (min-width: 2100px) and (max-width: 2600px)';
+    
+// $tab: '(max-width: 991px)';
+    // Max - width , Min - width
+    $xs-to-sm-max: '(max-width: 767px)';
+    $xs-to-sm-min: '(min-width: 767px)';
+    
+    $xs-to-md-max: '(max-width: 991px)';
+    $xs-to-md-min: '(min-width: 991px)';
+
+    $xs-to-lg-max: '(max-width: 1199px)';
+    $xs-to-lg-min: '(min-width: 1199px)';
+
+    $xs-to-xl-max: '(max-width: 1399px)';
+    $xs-to-xl-min: '(min-width: 1399px)';
+
+    $xs-to-xxl-max: '(max-width: 1599px)';
+    $xs-to-xxl-min: '(min-width: 1599px)';
+
+// Custom
+    $large1:'only screen and (min-width: 1600px) and (max-width: 1799px)';
+    $large2:'only screen and (min-width: 1800px) and (max-width: 1999px)';
+    $large5:'only screen and (min-width: 2000px) and (max-width: 2399px)';
+    $large6:'only screen and (min-width: 2400px) and (max-width: 2599px)';
+    $large7:'only screen and (min-width: 2600px) and (max-width: 2799px)';
+    $large8:'only screen and (min-width: 2800px) and (max-width: 2999px)';
+
+
+// Basic Color
+    $white: #ffffff;
+    $black: #000000;
+    $gray:#f7f7fd;
+
+    //social colors
+    $fb: #50598e;
+    $twitter: #6fa2d8;
+    $google-plus: #c64e40;
+    $linkedin: #0077B5;
+    
+// Social media colors
+    $facebook: #3b5999;
+    $twitter: #55acee;
+    $dribbble: #ea4c89;
+    $behance: #131418;
+    $google-plus: #dd4b39;
+    $linkedin: #0077b5;
+    $instagram: #e4405f;
+    $youtube: #FF0000;
+    $pinterest: #c8232c;
+    $steam-color: #ddd;
+
+// Bootstrap color
+    $primary : #084298;
+    $secondary : #41464b;
+    $danger: #dc3545;
+    $success: #3CC13B;
+    $info: #055160;
+    $warning: #F3BB1C;
+    $error: #F44336;
+    $blue: #11cdef;
+    $green : #4BD865;
+
+// General variables
+    $theme-font-color: #2b2b2b;
+    $theme-body-font-color: #242934;
+    $theme-body-sub-title-color: rgba($theme-body-font-color, 0.7);
+
+// section-background color
+    $section-bg-left: linear-gradient(-210deg, #1A202C 0%, #222B38 70%);
+    $section-bg-right: linear-gradient(-80deg, #1A202C 10%, #222B38 80%);
+    $section-bg-top: #2b2b2b;
+
+.section-bg-left{
+    background: $section-bg-left;
+}
+.section-bg-right{
+    background: $section-bg-right;
+}
+.section-bg-top{
+    background: $section-bg-right;
+}
+
+
+
+
+.color-linear {
+	background: linear-gradient(90deg, rgb(14, 165, 234), rgb(11, 209, 209) 51%, rgb(14, 165, 234)) var(--x, 0)/200%;
+	-webkit-background-clip: text !important;
+	-webkit-text-fill-color: transparent !important;
+	background-clip: text !important;
+	text-fill-color: transparent;
+}
+
+// button Linear
+.btn-linear {
+    background: linear-gradient(90deg, #0ea5eaab, #0bd1d1b5 51%, #0ea5eab0) var(--x, 0)/200%;
+    color: #ffffff;
+    transition: 0.5s;
+    &:hover{
+        --x: 100%;
+        color: #ffffff !important;
+        transition: 0.5s;
+    }
+}
+
+.border-linear{
+    border-radius: 8px;
+    display: flex;
+    padding: 10px 10px 10px 20px;
+    background: linear-gradient(#222F43, #222F43) padding-box, linear-gradient(to right, rgb(14, 165, 234), rgb(11, 209, 209)) border-box;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 8px;
+    border: 1px solid transparent;
+}
+
+
+
+
+// gradient colors
+    $gradient-primary: linear-gradient(#1693f8, #0d67e9);
+
+//error input color start
+    $light-body-bg-color:#fafdff;
+
+// dark layout variables
+    $dark-body-background: #202938;
+    $dark-card-background: #111727;
+    $dark-card-inbox: #323846;
+    $dark-small-font-color:#98a6ad;
+    $dark-all-font-color: rgba(255,255,255,0.7);
+    $light-all-font-color: rgba(255,255,255,0.2);
+    $sidebar-submenu-font-color:rgba(255,255,255,0.7);
+    $dark-border-color: $dark-body-background;
+    // $dark-card-border:#374558;
+    $dark-card-border: rgba(var(--main-color-one), 0.2);
+
+    $dark-editor-document: #2b2b2b;
+    $bg-dark-color: #1f2533;
+    $dark-datatable-odd: #1f232b;
+    $dark-datatable-sorting: #1c212b;
+    $dark-datatable-sorting-even: #22262f;
+    $dark-even-hover-sorting: #191e27;
+    $sidebar-height: calc(100vh - 0px);
+
+.height-100vh{
+    height: 100vh;
+    color: var(--main-color-one);
+}
+
+
+// Others
+    $btn-color : #334155;
+    $light-color : #f4f4f4;
+    $light-gray  : #e6edef;
+    $light-semi-gray :#efefef;
+
+    $secondary-color:#ba895d;
+    $success-color: #3CC13B;
+    $warning-color: #e2c636;
+    $danger-color: #d22d3d;
+    $light-color : #f4f4f4;
+    $light-gray  : #e6edef;
+    $light-semi-gray   :#efefef;
+    // $dark-light :$theme-font-color;
+    $dark-gray 	: #898989;
+    $dark-color   : #2c323f;
+    $gray-60   :#cccccc ;
+    $card-body-color : #f9f9fa;
+    $transparent-color: transparent;
+    $auth-bg-color:#fafafa;
+    $light : #fdfeff;
+    $semi-dark  :#59667a;
+    $light-text: #999;
+    $light-background: #f5f7fb;
+    $light-font: #717171;
+    $light-semi-font: $semi-dark;
+    $light-chartist-grid-color: #f6f9fd;
+    $off-white: #ffebce;
+    $dark-primary: #448aff;
+    $pitch-color: #fe8a7d;
+    $light-pitch: #fecf8b;
+    $flower-pink: #fb6d9d;
+    $dark-sky: #536dfe;
+    $color-scarpa: #4c5667;
+    $color-fiord: #455a64;
+    $dark-blue: #00008B;
+
+    $yellow:#f4c705;
+    $btn-bhome-bg-c:#ff6060;
+    $btn-search-bg-c:#ffd042;
+    $btn-opacity-down-primary:#F7F0FF;
+
+
+// /*-- Margin Padding --*/
+@for $i from 6 through 200 {
+
+    /*-- Margin To-Bottom-Left-Right --*/
+    .mt-#{1 * $i}{
+        margin-top: 1px * $i;
+    }
+    .mb-#{1 * $i}{
+        margin-bottom: 1px * $i;
+    }
+    .ml-#{1 *$i}{
+      margin-left: 1px * $i;
+    }
+    .mr-#{1 * $i}{
+        margin-right: 1px * $i;
+    }
+
+    /*-- Padding To-Bottom-Left-Right --*/
+    .pt-#{1 * $i}{
+        padding-top: 1px * $i;
+    }
+    .pb-#{1 * $i}{
+        padding-bottom: 1px * $i;
+    }
+    .pl-#{1 * $i}{
+        padding-left: 1px * $i;
+    }
+    .pr-#{1 * $i}{
+        padding-right: 1px * $i;
+    }
+}
+
+/*-- Margin Padding  0 --*/
+@for $i from 0 through 0 {
+
+    /*-- Margin To-Bottom-Left-Right --*/
+    .mt-#{0 * $i}{
+        margin-top: 0px * $i !important;
+    }
+    .mb-#{0 * $i}{
+        margin-bottom: 0px * $i !important;
+    }
+    .ml-#{0 *$i}{
+      margin-left: 0px * $i !important;
+    }
+    .mr-#{0 * $i}{
+        margin-right: 0px * $i !important;
+    }
+
+    /*-- Padding To-Bottom-Left-Right --*/
+    .pt-#{0 * $i}{
+        padding-top: 0px * $i !important;
+    }
+    .pb-#{0 * $i}{
+        padding-bottom: 0px * $i !important;
+    }
+    .pl-#{0 * $i}{
+        padding-left: 0px * $i !important;
+    }
+    .pr-#{0 * $i}{
+        padding-right: 0px * $i !important;
+    }
+}
+
+/*-- Height-Weight --*/
+@for $i from 1 through 600 {
+  .height-#{1 * $i}{
+      height: 1px * $i !important;
+  }
+  .wight-#{1 * $i}{
+      width: 1px * $i;
+  }
+}
+
+/*-- Border Radius --*/
+$i:0;
+@while $i<=20 {
+  .radius-#{$i} {
+    border-radius: #{$i}px !important;
+  }
+  $i:$i+1;
+}
+
+/*-- Border width --*/
+@for $i from 0 through 10 {
+    .border-#{1 * $i}{
+        border-width: 1px * $i !important;
+    }
+}
+
+
+
+/*-- Border color, hover-same color bg and text color white --*/
+$one :#9948f7;      $five : #fb437a;
+$two : #03c7c7;     $six : #f2994ae8;
+$three : #007acc;   $seven : #ed5d5d;
+$four : #08be72;    $eight : #ffd042;
+
+$border-colors-name: one, two, three, four, five, six, seven, eight;
+$border-colors: $one, $two, $three, $four, $five, $six, $seven, $eight;
+
+@each $i  in $border-colors-name {
+    $j: index($border-colors-name, $i);
+    .border-color-#{$i} {
+        border-color: nth($border-colors, $j) !important;
+        // color: nth($border-colors, $j);
+    }
+}
+
+/*-- Border Style --*/
+$border-style-name: solid, dashed, none, unset, hidden, dotted, double, inherit;
+@each $i  in $border-style-name {
+    .border-style-#{$i} {
+        border-style: $i !important;
+    }
+}
+
+
+// Position 
+$i:static, absolute, fixed, relative, initial, inherit;
+@each $val in $i {
+  .p-#{$val} {
+    position: $val;
+  }
+}
+
+// Overflow 
+$i:hidden, visible, auto;
+@each $val in $i {
+  .o-#{$val} {
+    overflow: $val;
+  }
+}
+
+// font size
+$i:1;
+@while $i <= 50{
+  .font-size-#{$i}{
+    font-size: #{$i}px !important;
+  }
+  $i:$i+1;
+}
+
+// Fonts weight
+$i: 100,200,300,400,500,600,700,800,900;
+@each $val in $i {
+  .font-weight-#{$val} {
+      font-weight: $val;
+  }
+}
+// Text color Class
+$text-name: primary, secondary,  success, danger, info, light, dark, warning;
+$text-color: var(--main-color-one),$secondary-color,$success-color,$danger-color,$light-font,$light-gray,$dark-color,$warning-color;
+@each $var in $text-name {
+  $i: index($text-name, $var);
+  .font-#{$var} {
+    color: nth($text-color, $i) !important;
+  }
+}
+
+// Color Make
+$label-name: theme, primary, secondary, success, danger, info, light, dark, warning;
+$label-color: var(--main-color-one),var(--main-color-one),$secondary-color,$success-color,
+              $danger-color,$light-font,$light-gray,$dark-color,$warning-color;
+
+@each $var in $label-name {
+  $i: index($label-name, $var);
+  .label-#{$var} {
+    background-color: nth($label-color, $i);
+  }
+}
+
+
+/*---------------------------------------------
+Background-color Makes CSS Class 
+@each <variable> in <expression> { ... } 
+-----------------------------------------------*/
+$background-name:  primary, secondary, success,  danger, info, light, dark, warning;
+$background-color: var(--main-color-one), $secondary-color, $success-color, $danger-color, $light-font, $light-gray, $dark-color, $warning-color;
+        
+@each $var in $background-name {
+  $i: index($background-name, $var);
+  .bg-#{$var} {
+    background-color: nth($background-color, $i) !important;
+  }
+}
+
+// Text-color  
+$text-name: primary, secondary, success, danger, info, light, dark, warning, google-plus, twitter, linkedin, fb;
+$label-color: var(--main-color-one), $secondary-color, $success-color, $danger-color,
+              $light-font, $light-gray, $dark-color, $warning-color, $google-plus, $twitter, $linkedin, $fb;
+
+@each $var in $text-name {
+  $i: index($text-name, $var);
+  .txt-#{$var} {
+    color: nth($label-color, $i) !important;
+  }
+}
+.txt-white{
+  color: $white !important;
+}
+
+// Btn-color
+@each $btn-name, $btn-color in  (primary, var(--main-color-one)),
+        (secondary, $secondary-color) , (success, $success-color),
+        (danger, $danger-color), (info, $light-font), (light, $light-gray),
+        (dark, $dark-color), (warning, $warning-color) {
+
+    .btn-#{$btn-name}{
+      background-color: $btn-color !important;
+      border-color: $btn-color !important;
+      &.disabled, &:disabled {
+        background-color: $btn-color !important;
+        border-color: $btn-color !important;
+      }
+      &:hover,&:focus,&:active,&.active{
+        // background-color: darken( $btn-color, 10% ) !important;
+        // border-color: darken( $btn-color, 10% ) !important;
+        border-color: var(--main-color-one);
+      }
+    }
+}
+
+.btn-primary-light {
+background-color: rgba(var(--main-color-one), 0.1) !important;
+border: none !important;
+color: var(--main-color-one);
+transition: 0.5s;
+&:focus, &:hover {
+  background-color: rgba(var(--main-color-one), 0.5) !important;
+  color:var(--white);
+  transition: 0.5s;
+}
+}
+
+/*======= Button-color css ends  ======= */
+@each $btn-name, $btn-color in  (primary, var(--main-color-one)),
+      (secondary, $secondary-color) ,
+      (success, $success-color),
+      (danger, $danger-color),
+      (info, $light-font),
+      (light, $light-gray),
+      (dark, $dark-color),
+      (warning, $warning-color) {
+    .btn-outline-#{$btn-name}-2x{
+        border-width: 2px;
+        border-color:$btn-color;
+        color: $btn-color;
+        background-color: transparent;
+        &:hover,&:focus,&:active,&.active{
+            color: white;
+            // background-color: darken( $btn-color, 10%) !important;
+            // border-color: darken( $btn-color, 10% )!important;
+            box-shadow: none;
+            border-color: var(--main-color-one);
+        }
+    }
+}
+
+// outline buttons//
+@each $btn-name, $btn-color in  (primary, var(--main-color-one)),
+      (secondary, $secondary-color) ,
+      (success, $success-color),
+      (danger, $danger-color),
+      (info, $light-font),
+      (light, $light-gray),
+      (dark, $dark-color),
+      (warning, $warning-color) {
+
+.btn-outline-#{$btn-name}{
+    border-color:$btn-color;
+    color: $btn-color;
+    background-color: transparent;
+    &.disabled{
+        color: $btn-color;
+    }
+    @if($btn-name == "light"){
+        color: $theme-body-font-color;
+    }
+    &:hover,&:focus,&:active,&.active{
+        color: white;
+        // background-color: darken( $btn-color, 10%) !important;
+        // border-color: darken( $btn-color, 10% ) !important;
+        border-color: var(--main-color-one);
+    }
+    }
+}
+
+//* active button css end *//
+
+@each $btn-name, $btn-color in  (primary, var(--main-color-one)),
+      (secondary, $secondary-color) ,
+      (success, $success-color),
+      (danger, $danger-color),
+      (info, $light-font),
+      (light, $light-gray),
+      (dark, $dark-color),
+      (warning, $warning-color) {
+
+    .btn-outline-#{$btn-name}-2x:not([disabled]):not(.disabled).active{
+    background-color:$btn-color;
+    border-color:$btn-color;
+    box-shadow: none !important;
+    color: white;
+    &:hover,&:focus,&:active,&.active{
+        color: white;
+        box-shadow: none !important;
+        // background-color: darken( $btn-color, 10% ) !important;
+        // border-color: darken( $btn-color, 10% ) !important;
+        border-color: var(--main-color-one);
+    }
+    }
+}
+
+// Table Border Bottom 
+
+$border-name:primary, secondary, success, danger, info, light, dark, warning;
+$border-color:var(--main-color-one),$secondary-color,$success-color,$danger-color,
+            $light-font,$light-gray,$dark-color, $warning-color;
+
+@each $var in $border-name {
+$i: index($border-name, $var);
+table thead .border-bottom-#{$var} th,
+table tbody .border-bottom-#{$var} th,
+table tbody .border-bottom-#{$var} td {
+  border-bottom: 1px solid nth($border-color, $i);
+}
+}
+
+
+// All Borders color
+
+$b-name: primary, secondary, success, danger, info, light, dark, warning;
+$b-color: var(--main-color-one), $secondary-color, $success-color, $danger-color, 
+        $light-font, $light-gray, $dark-color, $warning-color;
+
+@each $var in $b-name {
+  $i: index($b-name, $var);
+  .b-#{$var} {
+      border: 1px solid nth($b-color, $i) !important;
+  }
+  .b-t-#{$var} {
+      border-top: 1px solid nth($b-color, $i) !important;
+  }
+  .b-b-#{$var} {
+      border-bottom: 1px solid nth($b-color, $i) !important;
+  }
+  .b-l-#{$var} {
+      border-left: 1px solid nth($b-color, $i) !important;
+  }
+  .b-r-#{$var} {
+      border-right: 1px solid nth($b-color, $i) !important;
+  }
+}
+
+
+
+
+
+
+// Full Web site uses This Radius
+    $radius-4: 4px;
+    $radius-8: 8px;
+    $radius-12: 12px;
+    $radius-16: 16px;
+
+
+// Text Color
+    .text-white {
+        color: $white !important;
+    }
+    .text-warning {
+        color: $warning !important;
+    }
+    .text-danger {
+        color: $danger !important;
+    }
+    .text-success {
+        color: $success !important;
+    }
+    .text-success {
+        color: $success !important;
+    }
+    .text-error {
+        color: $error !important;
+    }
+    .text-blue {
+        color: $blue !important;
+    }
+
+// Font Weight
+//   @for $i from 100 through 900 {
+//     .font-weight-#{1 + $i}{font-weight: 100 + $i - 1 !important;}
+//   }
+
+.font-weight-600{
+    font-weight: 600px;
+}
+
+// Background Color
+    .bg-danger {
+        background-color: $danger !important;
+    }
+    .bg-warning {
+        background-color: $warning !important;
+    }
+    .bg-success {
+        background-color: $success !important;
+    }
+    .bg-error {
+        background-color: $error !important;
+    }
+    .bg-blue {
+        background-color: $blue !important;
+    }
+
+// Background Color opacity
+    .bg-danger-soft {
+        background-color: rgba($danger,.1) !important;
+    }
+    .bg-warning-soft {
+        background-color: rgba($warning,.1) !important;
+    }
+    .bg-success-soft {
+        background-color: rgba($success,.1) !important;
+    }
+    .bg-error-soft {
+        background-color: rgba($danger,.1) !important;
+    }
+    .bg-blue-soft {
+        background-color: rgba($blue,.1) !important;
+    }
+
+// Theme BG
+    .main-bg-one{
+        background-color: var(--main-color-one);
+    }
+    .main-bg-two{
+        background-color: var(--main-color-tow);
+    }
+    .main-bg-three{
+        background-color: var(--main-color-three);
+    }
+    .main-bg-four{
+        background-color: var(--main-color-four);
+    }
+    .main-bg-five{
+        background-color: var(--main-color-five);
+    }
+
+// Background Gradient
+
+    // Cart 2
+    .bg-danger-gradient {
+
+        background: -webkit-gradient(linear,left top,right top,from(#fe7096),to(#ffbf96));
+        background: linear-gradient(90deg,#fe7096,#ffbf96);
+        @include transition(.6s);
+        // &:hover{
+        //     background: linear-gradient(90deg,#fe7096,#ffbf96);
+        // }
+    }
+    .bg-success-gradient{
+        background: -webkit-gradient(linear,left top,right top,from(#07cdae),to(#84d9d2));
+        background: linear-gradient(90deg,#07cdae,#84d9d2);
+    }
+    .bg-warning-gradient {
+        background: -webkit-gradient(linear,left top,right top,from(#ffd500),to(#f6e384));
+        background: linear-gradient(90deg,#ffd500,#f6e384);
+    }
+    .bg-beguni-gradient {
+        background: -webkit-gradient(linear,left top,right top,from(#9a55ff),to(#da8cff));
+        background: linear-gradient(90deg,#9a55ff,#da8cff);
+    }
+    .bg-blue-gradient {
+        background: -webkit-gradient(linear,left top,right top,from(#047edf),color-stop(99%,#90caf9));
+        background: linear-gradient(90deg,#047edf,#90caf9 99%);
+    }
+
+    // Cart Three
+    .bg-orange-gradient {
+        background: -webkit-gradient(linear,left top,right top,from(#1B5661),color-stop(99%,#989898));
+        background: linear-gradient(90deg,#1B5661,#989898 99%);
+    }
+    .bg-romance-gradient {
+        background: -webkit-gradient(linear,left top,right top,from(#BE3664),color-stop(99%,#222771));
+        background: linear-gradient(90deg,#BE3664,#222771 99%);
+    }
+    .bg-tea-gradient {
+        background: -webkit-gradient(linear,left top,right top,from(#6CAD7E),color-stop(99%,#175360));
+        background: linear-gradient(90deg,#6CAD7E,#175360 99%);
+    }
+    .bg-royal-gradient {
+        background: -webkit-gradient(linear,left top,right top,from(#AA3475),color-stop(99%,#CB7326));
+        background: linear-gradient(90deg,#AA3475,#CB7326 99%);
+    }
+
+// Extend Color
+    %overlay1{
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,545454+100&0.85+0,0.06+100 */
+        background: -moz-linear-gradient(top,  rgba(0,0,0,0.85) 0%, rgba(84,84,84,0.06) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top,  rgba(0,0,0,0.85) 0%,rgba(84,84,84,0.06) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom,  rgba(0,0,0,0.85) 0%,rgba(84,84,84,0.06) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d9000000', endColorstr='#0f545454',GradientType=0 ); /* IE6-9 */
+    }
+    // &::before{
+    //   position: absolute;
+    //   width: 100%;
+    //   height: 100%;
+    //   bottom: 0;
+    //   content: "";
+    //   @extend %gradient;
+
+    // }
+
+
+/*-------------  Color Witch Class Name  --------------*/
+
+    // Section bg
+    .section-bg-one{
+        background: --section-bg-one;
+    }
+    .section-bg-tow{
+        background: --section-bg-two;
+    }
+    .section-bg-three{
+        background: --section-bg-three;
+    }
+    .white-bg{
+        background:var(--white);
+    }
+    .black-bg{
+        background: $black;
+    }
+
+// Color
+    .main-color-one{
+        color: var(--main-color-one);
+    }
+    .main-color-two{
+        color: var(--main-color-two);
+    }
+    .main-color-three{
+        color: var(--main-color-three);
+    }
+
+
+
+    .heading-color-one{
+        color: var(--heading-color-one) !important;
+    }
+    .heading-color-two{
+        color: var(--heading-color-two) !important;
+    }
+    .paragraph-color-one{
+        color: var(--paragraph-color-one) !important;
+    }
+    .paragraph-color-two{
+        color: var(--paragraph-color-two) !important;
+    }
+    
+    .color-paragraph{
+        color: var(--paragraph-color );
+    }
+    .gray-bg{
+        background: #f5f5f5;
+    }
+    .white-bg {
+        background:var(--white);
+    }
+    .black-bg {
+        background: $black;
+    }

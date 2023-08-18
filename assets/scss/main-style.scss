@@ -1,0 +1,33 @@
+/*-----------------------------------------------------------------------------------
+    :: Template Name : 
+    :: Template URI : 
+-----------------------------------------------------------------------------------*/
+
+// Global SCSS
+    @import "global/mixins";
+    @import "global/variables";
+    @import "global/global";
+    @import "global/button";
+    @import "global/animation";
+
+// layout
+    @import "layout/header";
+    @import "layout/sidebar";
+    @import "layout/footer";
+    @import "layout/dark-mode";
+  
+// Pages
+    @import "pages/hero";
+    @import "pages/approveMarket";
+    @import "pages/experience";
+    @import "pages/about";
+    @import "pages/contact_form";
+    @import "pages/colorlib";
+    @import "pages/themeforest";
+
+    @import "pages/want-wark";
+    @import "pages/curentStack";
+
+// Bootstrap Component
+    @import "pages/accordion";
+    @import "pages/tab";

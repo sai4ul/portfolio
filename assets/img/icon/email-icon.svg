@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+  <g id="email-icon" transform="translate(-1470 -805)">
+    <g id="Ellipse_1" data-name="Ellipse 1" transform="translate(1470 805)" fill="none" stroke="#0baaef" stroke-width="2">
+      <circle cx="30" cy="30" r="30" stroke="none"/>
+      <circle cx="30" cy="30" r="29" fill="none"/>
+    </g>
+    <text id="_" data-name="" transform="translate(1499 843)" fill="#0baaef" font-size="25" font-family="FontAwesome5Free-Regular, 'Font Awesome \35  Free'"><tspan x="-12.5" y="0"></tspan></text>
+  </g>
+</svg>

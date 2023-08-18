@@ -1,0 +1,200 @@
+/* demo */
+.demo-thumb {
+    box-shadow: 0 2px 40px rgba(0, 0, 0, .08);
+    transition: .6s;
+    position: relative;
+    &:hover {
+        box-shadow: 0 30px 65px rgba(0, 0, 0, .15)
+    }
+    a > img {
+        width: 100%;
+        transition: .6s;
+    }
+}
+#pnav {
+    a {
+        position: relative;
+        display: block;
+        text-align: center;
+        color: #fff;
+        width: 500px;
+        height: 600px;
+        -webkit-transition: background-position 6s ease-in-out;
+        -moz-transition: background-position 6s ease-in-out;
+        -ms-transition: background-position 6s ease-in-out;
+        -o-transition: background-position 6s ease-in-out;
+        transition: background-position 6s ease-in-out;
+        background-size: cover;
+        width: 100%;
+        &::before {
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            transition: .4s;
+        }
+        &::after {
+            // position: absolute;
+            // content: "\f066";
+            // content: "../img/gallery/live.png";
+            // font-size: 25px;
+            // font-weight: 900;
+            // font-family: "Font Awesome 5 free";
+            // color: #f15c59;
+
+            background-image: url(../img/gallery/live.png);
+            position: absolute;
+            content: "";
+            width: 67px;
+            transition: .6s;
+
+            left: 0;
+            right: 0;
+            text-align: center;
+            top: 50%;
+            transform: translateY(-50%);
+            opacity: 0;
+            transition: .6s;
+            height: 54px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center center;
+            margin: 0 auto;
+        }
+        &:hover {
+            background-position:0px 100%;
+            &::before {
+                background: rgba(173, 170, 169, 0.3);
+            }
+            &::after{
+                opacity: 1;
+            }
+        }
+    }
+}
+
+
+
+/* Theme-forest Item List  */
+.inner0{
+    background:url("../img/gallery/Themeforest/listocean.png") 0 0 no-repeat;
+}
+.inner1{
+    background:url("../img/gallery/Themeforest/doctor.png") 0 0 no-repeat;
+}
+.inner01{
+    background:url("../img/gallery/Themeforest/multisass.png") 0 0 no-repeat;
+}
+.inner2{
+    background:url("../img/gallery/Themeforest/directory.png") 0 0 no-repeat;
+}
+.inner3{
+    background:url("../img/gallery/Themeforest/eCommers.png") 0 0 no-repeat;
+}
+.inner4{
+    background:url("../img/gallery/Themeforest/azency.png") 0 0 no-repeat;
+}
+
+.inner04{
+    background:url("../img/gallery/Themeforest/lms.png") 0 0 no-repeat;
+}
+
+
+
+
+
+// AL
+.inner5{
+    background:url("../img/gallery/Themeforest/409.png") 0 0 no-repeat;
+}
+.inner6{
+    background:url("../img/gallery/Themeforest/412.png") 0 0 no-repeat;
+}
+.inner7{
+    background:url("../img/gallery/Themeforest/416.png") 0 0 no-repeat;
+}
+.inner8{
+    background:url("../img/gallery/Themeforest/419.png") 0 0 no-repeat;
+}
+.inner9{
+    background:url("../img/gallery/Themeforest/420.png") 0 0 no-repeat;
+}
+.inner10{
+    background:url("../img/gallery/Themeforest/421.png") 0 0 no-repeat;
+}
+.inner11{
+    background:url("../img/gallery/Themeforest/422.png") 0 0 no-repeat;
+}
+.inner12{
+    background:url("../img/gallery/Themeforest/425.png") 0 0 no-repeat;
+}
+.inner13{
+    background:url("../img/gallery/Themeforest/429.png") 0 0 no-repeat;
+}
+.inner14{
+    background:url("../img/gallery/Themeforest/430.png") 0 0 no-repeat;
+}
+.inner15{
+    background:url("../img/gallery/Themeforest/431.png") 0 0 no-repeat;
+}
+.inner16{
+    background:url("../img/gallery/Themeforest/438.png") 0 0 no-repeat;
+}
+.inner17{
+    background:url("../img/gallery/Themeforest/428.png") 0 0 no-repeat;
+}
+
+.inner18{
+    background:url("../img/gallery/Themeforest/shopMart.png") 0 0 no-repeat;
+}
+
+
+
+
+
+
+
+
+/* Gov & others Item List  */
+.innera1{
+    background:url("../img/gallery/gov_others/gov1.jpg") 0 0 no-repeat;
+}
+.innera2{
+    background:url("../img/gallery/gov_others/gps_traking.jpg") 0 0 no-repeat;
+}
+.innera3{
+    background:url("../img/gallery/gov_others/mahdeen_group.jpg") 0 0 no-repeat;
+}
+.innera4{
+    background:url("../img/gallery/gov_others/getwayAutomation.jpg") 0 0 no-repeat;
+}
+.innera5{
+    background:url("../img/gallery/gov_others/androad-doc.jpg") 0 0 no-repeat;
+}
+.innera6{
+    background:url("../img/gallery/gov_others/fiver_por2.jpg") 0 0 no-repeat;
+}
+.innera7{
+    background:url("../img/gallery/gov_others/fiver_pro02.jpg") 0 0 no-repeat;
+}
+.innera8{
+    background:url("../img/gallery/gov_others/fiver_pro1.jpg") 0 0 no-repeat;
+}
+
+
+
+/* Admin  */
+.innerb1{
+    background:url("../img/gallery/admin/directory.jpg") 0 0 no-repeat;
+    height: 400px !important;
+}
+.innerb2{
+    background:url("../img/gallery/admin/shopMart.jpg") 0 0 no-repeat;
+    height: 400px !important;
+}
+.innerb3{
+    background:url("../img/gallery/admin/drax.jpg") 0 0 no-repeat;
+    height: 400px !important;
+}

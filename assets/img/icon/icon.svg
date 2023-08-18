@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="63" height="63" viewBox="0 0 63 63">
+  <g id="icon" transform="translate(-1470 -805)">
+    <g id="Ellipse_1" data-name="Ellipse 1" transform="translate(1470 805)" fill="none" stroke="#ff5e14" stroke-width="2">
+      <circle cx="31.5" cy="31.5" r="31.5" stroke="none"/>
+      <circle cx="31.5" cy="31.5" r="30.5" fill="none"/>
+    </g>
+    <text id="_" data-name="" transform="translate(1502 846)" fill="#ff5e14" font-size="24" font-family="FontAwesome5Free-Regular, 'Font Awesome \35  Free'"><tspan x="-12" y="0"></tspan></text>
+  </g>
+</svg>

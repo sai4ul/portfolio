@@ -1,0 +1,88 @@
+.about-area{
+    position: relative;
+    z-index: 1;
+    &::before{
+        position: absolute;
+        content: "";
+        width: 74%;
+        height: 100%;
+        background: linear-gradient(-80deg, #1E2430 10%, #222B38 80%);
+        border-radius: 0 90px 90px 0;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        z-index: -1;
+        @media #{$inc25}{
+            width: 68%;
+        }
+        @media #{$md}{
+            width: 80%;
+        }
+    }
+    .about-caption{
+         p{
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 35px;
+            padding-right: 50px;
+            font-weight: 400;
+            @media #{$lg}{
+                padding-right: 20px;
+            }
+            @media #{$sm}{
+                padding-right: 0px;
+            }
+            @media #{$xs}{
+                padding-right: 0px;
+            }
+        }
+    }
+}
+.about-caption{
+    @media #{$xs}{
+        margin-bottom: 35px;
+    }
+	
+}
+.bg-height.pb-160{
+    @media #{$xs}{
+        padding-bottom: 100px;
+    }
+}
+
+// Progress Bar
+
+.skill-ara{
+    .single-skill{
+        margin-bottom: 25px;
+        .progress-count{
+            display: flex;
+            justify-content: space-between;
+            p {
+                font-size: 16px;
+                font-weight: 400;
+                text-transform: capitalize;
+                color: var(--paragraph-color-one);
+                margin-bottom: 10px;
+            }
+            span{
+                font-size: 16px;
+                font-weight: 400;
+                text-transform: capitalize;
+                margin: 0;
+                @extend .color-linear;
+            }
+        }
+        .progress {
+            height: 1px;
+            border-radius: 0;
+            background:var(--section-bg-one);
+            border-radius: 4px;
+        }
+        .progress-bar {
+            background: linear-gradient(90deg, rgba(14,165,234,0.670588), rgba(11,209,209,0.709804) 51%, rgba(14,165,234,0.690196)) var(--x, 0)/200%;
+            border-radius: 7px;
+        }
+    }
+}
+

@@ -1,0 +1,85 @@
+
+//Dark layout
+body {
+	&.darkMode {
+		color: $dark-all-font-color;
+		background-color: $dark-body-background;
+
+		.white-bg{
+			background: $dark-body-background; ;
+		}
+
+		footer {
+			background-color:  $dark-body-background;
+		}
+		 
+
+
+		//  .hederTop {
+		// 	background-color: $dark-body-background;
+		// }
+		  header.main-nav .main-navbar .nav-menu > li .mega-menu-container .mega-box .link-section .submenu-title h5 {
+			color: rgba(255,255,255,0.7);
+		}
+		
+		  header.main-nav .nav-menu > li > a {
+			color: rgba(255,255,255,0.7);
+		}
+		
+		  .according-menu i {
+			color: rgba(255,255,255,0.7);
+		}
+		
+		  .according-menu i {
+			color: rgba(255,255,255,0.7);
+		}
+		
+		.horizontal-wrapper .hederTop  .nav-right .nav-menus li .onhover-show-div p,  .hederTop  .nav-right .nav-menus li .onhover-show-div p {
+			color: #fff !important;
+		}
+		
+		
+		.horizontal-wrapper .hederTop  li i,  .hederTop  li i {
+			color: #e6edef;
+		}
+		
+		.horizontal-wrapper  footer p,   footer p {
+			color: rgba(255,255,255,0.7);
+		}
+
+		// sidebar 
+		.main-navbar {
+			ul.nav-pills{
+				border-color:$dark-card-border;
+				.nav-item{
+					&:last-child{
+						border-color:$dark-card-border;
+					}
+					.nav-link{
+						color:$dark-all-font-color;					
+					}
+				}
+			}
+		}
+
+		.hederTop{
+			box-shadow: 0 0 18px 3px $dark-card-background;
+				.left-menu-header {
+					ul {
+						li {
+							.search-form {
+								input{
+									&::placeholder{
+										color:$dark-all-font-color;
+									}
+								}
+							}
+						}
+					}
+				}	
+			
+			}
+		
+	}
+}
+

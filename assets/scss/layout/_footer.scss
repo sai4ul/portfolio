@@ -1,0 +1,275 @@
+
+.footer-wrapper{
+    //copy Right 
+    .footer-bottom-area {
+        background:var(--main-color-one);
+        .footer-border{
+            // border-top: 1px solid #d7e7fe;
+            padding: 5px 0px;
+        }
+        .footer-copy-right{
+            p{
+                color: #fff;
+                font-weight: 300;
+                font-size: 17px;
+                line-height: 2;
+                margin-bottom: 0px;
+                i{
+                    color:var(--main-color-one);
+                }
+                a{
+                    color: var(--heading-color-one);
+                    font-weight: 500;   
+                    &:hover{
+                        // color: #C2C5DB;
+                    }
+                    
+                }
+            }
+        }
+    }
+}
+// Services
+.services-area{
+    background: rgba(0,0,0,0.04);
+    padding: 50px 15px 0px 30px;
+    box-shadow: 2px 1px 7px rgba(0,0,0,0.3);
+    .single-cat{
+        border-radius: 6px;
+        padding: 0px 0px 30px 0px;
+        @include transition(.4s);
+        position: relative;
+        z-index: 1;
+        &::before {
+            @include transition(.4s);
+            position: absolute;
+            content: "";
+            width: 0;
+            height: 5px;
+            background:var(--main-color-one);
+            
+            z-index: -1;
+            border-radius: 6px;
+
+            bottom: 0;
+            left: 0;
+            right: 0;
+            text-align: center;
+            margin: 0 auto;
+        }
+        .cat-cap{
+            h5{
+                & > a{
+                    color: $white;
+                    @include transition(.2s);
+                    font-size: 25px;
+                    font-weight: 400;
+                    margin-bottom: 26px;
+                    display: block;
+                }
+            }
+            ul{
+                li{
+                    color: var(--main-color-one);
+                    margin-left: 46px;
+                    list-style: disc;
+                    @media #{$large1}{
+                        margin-left: 28px;
+                    }
+                    @media #{$xs}{
+                        margin-left: 10px;
+                    }
+                    p{
+                        margin-bottom: 6px;
+                        font-size: 17px;
+                        font-weight: 300;
+                        color: var(--paragraph-color-one);
+                        @media #{$large1}{
+                            font-size: 15px;
+                        }
+                        @media #{$md}{
+                            font-size: 15px;
+                        }
+                        @media #{$xs}{
+                            font-size: 15px;
+                        }
+                        
+                    }
+
+                }
+            }
+            p{
+                margin-bottom: 36px;
+                color: #57667e;
+                font-size: 16px;
+                @include transition(.2s);
+                @media #{$sm}{
+                    font-size: 15px;
+                }
+            }
+            a.read-more-icon{
+                .right-icon{
+                    color: var(--main-color-one);
+                    font-size: 35px;
+                    @include transition(.2s);
+                }
+            }
+        }
+    
+    
+        // Hover Effect In single 
+        &:hover{
+            // border: 1px solid transparent;
+            &::before {
+                width: 10%;
+            }
+    }
+    }
+}
+
+.footer-nav{
+    text-align: center;
+    padding: 40px;
+    border-top: 1px dashed #6060606e;
+    .listing{
+       .single-list{
+            font-size: 1rem;
+            line-height: 1.5rem;
+            display: inline-block;
+            margin: 5px 8px;
+            opacity: .8;
+            a{
+                color: var(--white);
+            }
+       } 
+    }
+}
+
+
+.footer-wrapper2{
+    .footer-area{
+        .single-footer-caption{
+            padding: 40px 0;
+        }
+        .footer-pera{
+            p{
+                font-size: 14px;
+                margin-bottom: 19px;
+                line-height: 1.8;
+            }
+            &.footer-pera2 p{
+                padding: 0;
+            }
+        }
+        .footer-tittle{
+            h4{
+                color: #ffffff;
+                font-size: 24px;
+                margin-bottom: 30px;
+                font-weight: 700;
+            }
+            ul{
+                li{
+                    margin-bottom: 8px;
+                     a{
+                        color: #fff;
+                        font-weight: 600;
+                        font-size: 16px;
+                        &:hover{
+                            color:#fff;
+                            text-decoration: underline;
+                        }
+                       
+                    }
+                    span{
+                        color: red;
+                    }
+                }
+            }
+
+            p{
+                font-size: 16px;
+            }
+        }
+    }
+    // footer social
+    ul.footer-social{
+        li{
+            display: inline-block;
+            a{
+                width: 48px;
+                height: 48px;
+                line-height: 48px;
+                border-radius: 50%;
+                background: rgba(255, 255, 255,.1);
+                color:#E1EEEB;
+                font-size: 16px;
+                display: inline-block;
+                text-align: center;
+                margin-right: 5px;
+                i{
+                    @include transition(.4s);
+                    display:inline-block;
+                    transform: rotateY(0deg);
+                    -webkit-transform: rotateY(0deg);
+                    -moz-transform: rotateY(0deg);
+                    -ms-transform: rotateY(0deg);
+                    -o-transform: rotateY(0deg)
+                }
+                &:hover{
+                    color: var(--main-color-one);
+                    i{
+                        transform: rotateY(180deg);
+                        -webkit-transform: rotateY(180deg);
+                        -moz-transform: rotateY(180deg);
+                        -ms-transform: rotateY(180deg);
+                        -o-transform: rotateY(180deg); 
+                    }
+                }
+        
+            }
+        }
+    }
+}
+
+.border-1{
+    border-right: 1px dashed #6060606e;
+    padding-right: 63px;
+    @media #{$xs-to-xl-max}{
+        border-right:0;
+    }
+}
+
+
+
+
+
+
+
+// Circle Animated Button
+.bg-blur.bg-blur-top-left {
+    bottom: 0rem;
+    left: -8rem;
+}
+.bg-blur-wrapper {
+    position: absolute !important;
+	height: 300px;
+    width: 700px;
+	pointer-events: none;
+}
+.bg-blur {
+	width: 20rem;
+	height: 20rem;
+	position: absolute;
+	filter: blur(5rem);
+}
+.rounded-full {
+	border-radius: 100%;
+}
+.bg-blur-wrapper {
+	pointer-events: none;
+}
+.blue {
+	background-color: #2196f35c;
+	color: #fff;
+}

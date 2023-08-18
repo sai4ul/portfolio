@@ -1,0 +1,71 @@
+.single-stack{
+    cursor: pointer;
+    @include transition(.2s);
+    background: var(--main-color-two);
+    padding:28px 34px;
+    border-radius: var(--radius-three);
+    display: flex;
+    border-left: 1px solid transparent;
+    position: relative;
+    z-index: 1;
+    transform: translateX(0px) translateY(0px) scale(1) translateZ(0px);
+    background:linear-gradient(-0deg, #1E2430 10%, #222B38 80%);
+    .icon{
+        position: absolute;
+        top: -17px;
+        left: -18px;
+        width: 50px;
+        height: 50px;
+        background: var(--body-bg);
+        border-radius: 50%;
+        text-align: center;
+        line-height: 51px;
+        i{
+            font-size: 23px;
+        }
+    }
+    .contact-stack{
+        text-align: left;
+        .contact-name{
+            @include transition(.3s);
+            color: var(--white);
+            font-family: var(--heading-font);
+            text-transform: capitalize;
+            font-size: 25px;
+            font-weight: 500;
+            text-align: left;
+            margin-bottom: 8px;
+            display: block;
+        }
+        .contact-info{
+            @include transition(.3s);
+            font-family: var(--heading-font);
+            line-height:1.5 ;
+            margin: 0;
+            font-size: 14px;
+        }
+        .stack-listing{
+            .stack{
+                display: inline-block;
+                margin: 2px 5px;
+            }
+            svg {
+                margin-right: 5px;
+                position: relative;
+                top: 2px;
+            }
+        }
+    }
+  
+    &:hover{
+        .contact-text{
+            text-align: left;
+            .contact-name{
+                color: $white;
+            }
+            .contact-info{
+                color: $white !important;
+            }
+        }
+    }     
+}

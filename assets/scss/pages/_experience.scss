@@ -1,0 +1,99 @@
+.single-colleague-img img{
+    width: 100%;
+}
+.services-ion img {
+	max-width: 205px;
+}
+.single-colleague-img {
+	border-radius: 5px;
+	overflow: hidden;
+    img{
+        border-radius: 5px;
+    }
+}
+.colorlib-logo img {
+	width: 110px;
+}
+.profile{
+    margin-bottom:10px !important ;
+    u{
+        font-weight: 500;
+    }
+}
+.single-services{
+    padding: 24px 27px;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    transition: .4s;
+    background: var(--main-color-two);
+    border-bottom: 1px solid var(--main-color-one);
+    border-radius: 5px;
+    @media #{$large1}{
+        padding: 36px 35px;
+    }
+    @media #{$lg}{
+        padding: 22px 24px;
+    }
+    @media #{$xs}{
+        padding: 47px 19px;
+    }
+    @media #{$sm}{
+        padding: 57px 36px;
+    }
+    @media #{$md}{
+        padding: 56px 32px;
+    }
+    
+    @include transition(.4s);
+
+    .services-ion{
+        margin-bottom: 24px;
+    }
+    .services-cap{
+        
+        h5{
+            font-size: 24px;
+            line-height: 1.4;
+            margin-bottom: 12px;
+            font-weight: 600;
+            display: block;
+            @media #{$sm}{
+                font-size: 20px;
+            }
+            color: var(--heading-color) !important;
+        }
+        a{
+            // @extend .color-linear;
+        }
+        p{
+            margin-bottom: 5px;
+        }
+        span{
+            @extend .color-linear;
+            font-family: var(--heading-font);
+            font-size: 16px;
+            position: relative;
+            padding-left: 25px;
+            &::before {
+                position: absolute;
+                content: "";
+                width: 15px;
+                height: 2px;
+                left: 0px;
+                top: 50%;
+                transform: translateY(-50%);
+                background: var(--main-color-one);
+            }
+        }
+
+    }
+    &:hover{
+        // border: 1px solid var(--main-color-one);
+        .services-ion{
+            span{
+                color: var(--main-color-one);
+            }
+        }
+    }
+}
+

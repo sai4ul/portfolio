@@ -1,0 +1,61 @@
+
+.wantToWork-caption{
+    .hireing{
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 1.5;
+        margin-bottom: 20px;
+        color: #fff;
+    } 
+    span {
+        color: var(--main-color-one);
+        font-weight: 500;
+    }
+}    
+.wantToWork-btn{
+
+    @media #{$sm}{
+        float: left;
+        margin-top: 30px;
+    }
+    @media #{$xs}{
+        float: left;
+        margin-top: 30px;
+    }
+    @media #{$md}{
+        float: left;
+        margin-top: 30px;
+    }
+}
+.wants-wrapper {
+	background: linear-gradient(-210deg, #1A202C 0%, #222B38 70%);
+	border-radius: 8px;
+}
+
+.sm-left{
+    @media #{$xs}{
+        float: left;
+        margin-top: 30px;
+    } 
+    @media #{$sm}{
+        float: left;
+        margin-top: 30px;
+    } 
+}
+
+.double-btn.f-right {
+    @include flexbox();
+    @include align-items(center);
+    @include flex-wrap(wrap);
+    @media #{$sm}{
+        float: left;
+    } 
+    @media #{$xs}{
+        float: left;
+    } 
+}
+
+
+.w-padding{
+    padding:35px 20px 20px 21px;
+}

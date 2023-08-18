@@ -1,0 +1,122 @@
+
+.colorlib-area{
+    .box{
+        position: relative;
+        // img
+        .gallery-img{
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
+        .big-img{
+            height: 300px;
+            @media #{$large1}{
+                height: 260px;
+            }
+            @media #{$lg}{
+                height: 170px;
+            }
+            @media #{$md}{
+                height: 170px;
+            }
+            @media #{$sm}{
+                height: 146px;
+            }
+            @media #{$xs}{
+                height: inherit;
+            }
+        }
+        .small-img{
+            height: 435px;
+        }
+        // Caption
+        .overlay {
+            position: absolute;
+            text-align: center;
+            width: 100%;
+            height: 100%;
+            /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#021a47+0,ff8553+100&0+0,0.3+100 */
+            background: -moz-linear-gradient(top,  rgba(2,26,71,0) 0%, rgba(75, 174, 219, 0.3) 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(top,  rgba(2,26,71,0) 0%,rgba(75, 174, 219, 0.3) 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to bottom,  rgba(2,26,71,0) 0%,rgba(75, 174, 219, 0.3) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00021a47', endColorstr='#4dff8553',GradientType=0 ); /* IE6-9 */
+            top: 0;
+            left: 0;
+            .overlay-content {
+                position: absolute;
+                bottom: 0;
+                transform: translateY(-50%);
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+                p{
+                    color: #ffffff;
+                    font-size: 14px;
+                    font-weight: 300;
+                    margin: 0;
+                    span{
+                        color: var(--main-color-one);
+                        font-weight: 700;
+                        margin-right: 5px;
+                    }
+                }
+                h3 {
+                    color: #ffffff;
+                    font-size: 40px;
+                    margin: 0;
+                    text-transform: uppercase;
+                    @media #{$lg}{
+                        font-size: 32px;
+                    }
+                    @media #{$xs}{
+                        font-size: 32px;
+                    }
+                }
+            }
+        }
+        &.snake{
+            position: relative;
+            overflow: hidden;
+        }
+        // icon
+        .live-icon {
+            @include transition(.6s);
+            position: absolute;
+            top: 7px;
+            right: 0;
+            width: 53px;
+            left: 0;
+            margin: 0 auto;
+
+            opacity: 0;
+            visibility: hidden;
+
+        }
+        &:hover{
+            .live-icon {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+}
+
+.box{
+    position: relative;
+    img{
+        width: 100%;
+    }
+    &.snake{
+        position: relative;
+        overflow: hidden;
+    }
+}
+.overlay{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0,.3);
+    top: 0;
+    left: 0;
+  }
+  
