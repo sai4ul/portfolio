@@ -7,51 +7,74 @@
 
 ```
 .
-├── internal
-│   ├── definitions
-│   ├── gatsby
-│   │   ├── constants
-│   │   ├── queries
-│   │   ├── types
-│   │   └── utils
-│   └── testing
-│       └── __mocks__
-└── src
-    ├── assets
-    │   └── scss
-    │       ├── base
-    │       └── mixins
-    ├── components
-    │   ├── Feed
-    │   ├── Icon
-    │   ├── Image
-    │   ├── Layout
-    │   ├── Page
-    │   ├── Pagination
-    │   ├── Post
-    │   │   ├── Author
-    │   │   ├── Comments
-    │   │   ├── Content
-    │   │   ├── Meta
-    │   │   └── Tags
-    │   └── Sidebar
-    │       ├── Author
-    │       ├── Contacts
-    │       ├── Copyright
-    │       └── Menu
-    ├── constants
-    ├── hooks
-    ├── templates
-    │   ├── CategoriesTemplate
-    │   ├── CategoryTemplate
-    │   ├── IndexTemplate
-    │   ├── NotFoundTemplate
-    │   ├── PageTemplate
-    │   ├── PostTemplate
-    │   ├── TagsTemplate
-    │   └── TagTemplate
-    ├── types
-    └── utils
+├── assets
+│   ├── css
+│   │   ├── bootstrap-5.0.2.min.css
+│   │   ├── icon.css
+│   │   ├── plugin.css
+│   │   └── main-style.css
+│   └── fonts
+│   │   ├── Line-awsome
+│   │   ├── Font-Awesome
+│   │   └── main-style.css
+│   └── js
+│   |   ├── bootstrap-5.0.2.min.js
+│   |   ├── jquery-3.6.0.min.js
+│   |   ├── proper.min.js
+│   |   └── plugin.js
+|   └── video-bg
+|   |
+|   └── SCSS
+|        ├── global
+|        │   ├── animations.scss
+|        │   ├── buttons.scss
+|        │   ├── global.scss
+|        │   ├── misins.scss
+|        │   └── variables.scss
+|        │   |
+|        │   └── pages
+|        │       ├── about.scss
+|        │       ├── accordion.scss
+|        │       ├── approveMarket.scs
+|        │       ├── contact_form.scss
+|        │       ├── hero.scss
+|        │       ├── tab.scss
+|        │       ├── want-wark.scss
+|        │       └── cololib.scss
+|        |
+|        ├── layout
+|        │   ├── dark-mode.scss
+|        │   ├── footer.scss
+|        │   ├── header.scss
+|        │   ├── sidebar.scss
+|        │   └── theme-customizer.scss
+|        ├── templates
+|        │   ├── CategoriesTemplate
+|        │   ├── CategoryTemplate
+|        │   ├── IndexTemplate
+|        │   ├── NotFoundTemplate
+|        │   ├── PageTemplate
+|        │   ├── PostTemplate
+|        │   ├── TagsTemplate
+|        │   └── TagTemplate
+|        |
+|        └── main-style.scss
+|
+├── include
+|   └── Footer.html
+|
+├── admin.html
+|
+├── blog.html
+|
+├── colorlib.html
+|
+├── gov_other.html
+|
+├── themeforest.html
+|
+└──  index.html
+
 ```
 
 
