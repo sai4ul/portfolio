@@ -1,6 +1,7 @@
 
 //Dark layout
 body {
+
 	&.darkMode {
 		color: $dark-all-font-color;
 		background-color: $dark-body-background;
@@ -61,6 +62,7 @@ body {
 				}
 			}
 		}
+		
 
 		.hederTop{
 			box-shadow: 0 0 18px 3px $dark-card-background;
