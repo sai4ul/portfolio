@@ -1,7 +1,7 @@
 # portfolio-starter-kit
 
 
-
+amazing Minimal Personal Portfolio html Theme which is extremely easy to use. Besides its unique and modern look, Drake is designed for all devices, not only responsive, It is fully optimized for all display devices. You can use it for Designer, Developer, Programmer, Freelancer, Artist, Photographer & Can be used for Personal Portfolio, and more website projects. or just a Blog.
 
 ## Folder Structure
 
