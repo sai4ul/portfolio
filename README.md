@@ -5,6 +5,9 @@ amazing Minimal Personal Portfolio html Theme which is extremely easy to use. Be
 
 Live Demo <a href="https://sai4ul.github.io/portfolio-starter-kit/" target="_blank">Live</a>
 
+
+<img src="./assets/img/home.png" width="100%" align="left"/>
+
 ## Folder Structure
 
 ```
