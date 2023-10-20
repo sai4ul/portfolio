@@ -201,7 +201,7 @@
             borderRadius:'var(--radius-two)'
         });
         $('.bar-4').rProgressbar({
-            percentage: 40,
+            percentage: 45,
             fillBackgroundColor: 'var(--main-color-four)',
             height:8,
             borderRadius:'var(--radius-two)'
@@ -232,9 +232,9 @@
             Hover section Tilt Effect
         -----------------------------------*/
         $('.tilt-effect').tilt({
-            maxTilt: 6,
+            maxTilt: 5,
             easing: "cubic-bezier(.03,.98,.52,.99)",
-            speed: 500,
+            speed: 400,
             transition: true
         });
 
