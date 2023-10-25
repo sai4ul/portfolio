@@ -188,30 +188,35 @@
             height:8,
             borderRadius:'var(--radius-two)'
         });
+		
         $('.bar-2').rProgressbar({
             percentage: 80,
             fillBackgroundColor: 'var(--main-color-two)',
             height:8,
             borderRadius:'var(--radius-two)'
         });
+		
         $('.bar-3').rProgressbar({
             percentage: 60,
             fillBackgroundColor: 'var(--main-color-three)',
             height:8,
             borderRadius:'var(--radius-two)'
         });
+		
         $('.bar-4').rProgressbar({
             percentage: 45,
             fillBackgroundColor: 'var(--main-color-four)',
             height:8,
             borderRadius:'var(--radius-two)'
         });
+		
         $('.bar-5').rProgressbar({
             percentage: 20,
             fillBackgroundColor: 'var(--main-color-five)',
             height:8,
             borderRadius:'var(--radius-two)'
         });
+		
         $('.bar-6').rProgressbar({
             percentage: 20,
             fillBackgroundColor: 'var(--main-color-two)',
