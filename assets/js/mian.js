@@ -63,7 +63,7 @@
         $('#back-top a').on("click", function () {
             $('body,html').animate({
             scrollTop: 0
-            }, 800);
+            }, 700);
             return false;
         });
 
@@ -229,7 +229,7 @@
             Overlay
         -----------------------------------*/
         $(".snake").snakeify({
-            speed: 200
+            speed: 250
         });
 
 		
@@ -237,7 +237,7 @@
             Hover section Tilt Effect
         -----------------------------------*/
         $('.tilt-effect').tilt({
-            maxTilt: 5,
+            maxTilt: 4,
             easing: "cubic-bezier(.03,.98,.52,.99)",
             speed: 400,
             transition: true
