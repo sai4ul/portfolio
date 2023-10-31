@@ -29,9 +29,9 @@
         -----------------------------------*/
         $(window).on('scroll', function () {
             var scroll = $(window).scrollTop();
-            if (scroll < 400) {
+            if (scroll < 440) {
               $(".header-sticky").removeClass("sticky-bar");
-              $('#back-top').fadeOut(500);
+              $('#back-top').fadeOut(530);
             } else {
               $(".header-sticky").addClass("sticky-bar");
               $('#back-top').fadeIn(500);
@@ -50,7 +50,7 @@
             One Page Nav
         -----------------------------------*/
         if ($(".header-area").length) {
-            var top_offset = $('.header-area').height() - 10;
+            var top_offset = $('.header-area').height() - 11;
             $('.main-menu nav ul').onePageNav({
             currentClass: 'active',
             scrollOffset: top_offset,
@@ -63,7 +63,7 @@
         $('#back-top a').on("click", function () {
             $('body,html').animate({
             scrollTop: 0
-            }, 700);
+            }, 720);
             return false;
         });
 
