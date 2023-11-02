@@ -86,7 +86,6 @@
                         font-size: 22px;
                     }
                     i{
-
                     }
                     &:hover{
                         transform: scale(1.08);
@@ -107,13 +106,10 @@
                 position: absolute;
                 top: 50%;
                 transform: translateZ(-50%);
-
                 left: 0;
                 right: 0;
                 text-align: center;
                 margin: 0 auto;
-                z-index: 0;
-                
             }
         }
         &.snake{

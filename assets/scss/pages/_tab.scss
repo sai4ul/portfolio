@@ -1,6 +1,5 @@
 // Tabs Button Style
 .tab-button{
-
     // Tab Button style One
     &.style-one{
         nav{
@@ -110,7 +109,6 @@
                         @media #{$xs}{
                             border-bottom: 0;
                         }
-                       
                     }
                     &:hover {
                         border-bottom: 2px solid var(--main-color-one);
@@ -160,7 +158,6 @@
                         @media #{$xs}{
                             border-bottom: 0;
                         }
-                    
                     }
                     &:hover {
                         border: 0;
@@ -234,9 +231,7 @@
                     }
                 }
                 &:hover {
-    
                 }
-    
             }
         }
     }
@@ -271,7 +266,6 @@
                 &:last-child{
                     border-right: 0;
                 }
-
                 width: 16.66%;
 
                 @media #{$lg}{
@@ -317,7 +311,6 @@
                 &:hover {
 
                 }
-
             }
         }
     }
@@ -430,7 +423,6 @@
                         @media #{$xs}{
                             border-bottom: 0;
                         }
-                    
                     }
                     &:hover {
                         @media #{$xs}{
@@ -445,15 +437,11 @@
    // Tabs Button Style Five
     &.style-eight{
         nav{
-
             .nav-tabs{
                 margin-bottom: 15px;
                 padding-bottom: 0px;
                 position: relative;
                 border: 0;
-                .nav-item {
-
-                }
                 .nav-link {
                     position: relative;
                     background: #f5f5fd;
@@ -504,9 +492,7 @@
                             opacity: 1;
                             visibility: visible;
                         }
-                    
                     }
-                    
                 }
             }
         }
@@ -560,7 +546,6 @@
                     margin-left: 10px;
                     padding: 20px 10px;
                 }
-                
                 i{
                     color: var(--paragraph-color-one);
                     font-size: 31px;

@@ -4,14 +4,11 @@
     1. nice-select
     2. tilt
     3. wow
-    4. 
     5. nicescroll
     6. odometer
     7. appear
-    8. 
     9. slick
     10.lazy
-    11.
     12. progressBarfiller
     13. Magnific Popup
     14. Price Range
