@@ -34,7 +34,7 @@
               $('#back-top').fadeOut(530);
             } else {
               $(".header-sticky").addClass("sticky-bar");
-              $('#back-top').fadeIn(500);
+              $('#back-top').fadeIn(520);
             }
           });
 		  
@@ -63,7 +63,7 @@
         $('#back-top a').on("click", function () {
             $('body,html').animate({
             scrollTop: 0
-            }, 720);
+            }, 730);
             return false;
         });
 
@@ -229,7 +229,7 @@
             Overlay
         -----------------------------------*/
         $(".snake").snakeify({
-            speed: 250
+            speed: 260
         });
 
 		
