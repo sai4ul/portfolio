@@ -19,6 +19,7 @@ GNU General Public License for most of our software; it applies also to
 any other work released this way by its authors.  You can apply it to
 your programs, too.
 
+
   When we speak of free software, we are referring to freedom, not
 price.  Our General Public Licenses are designed to make sure that you
 have the freedom to distribute copies of free software (and charge for
@@ -31,11 +32,13 @@ these rights or asking you to surrender the rights.  Therefore, you have
 certain responsibilities if you distribute copies of the software, or if
 you modify it: responsibilities to respect the freedom of others.
 
+
   For example, if you distribute copies of such a program, whether
 gratis or for a fee, you must pass on to the recipients the same
 freedoms that you received.  You must make sure that they, too, receive
 or can get the source code.  And you must show them these terms so they
 know their rights.
+
 
   Developers that use the GNU GPL protect your rights with two steps:
 (1) assert copyright on the software, and (2) offer you this License
@@ -47,6 +50,7 @@ authors' sake, the GPL requires that modified versions be marked as
 changed, so that their problems will not be attributed erroneously to
 authors of previous versions.
 
+
   Some devices are designed to deny users access to install or run
 modified versions of the software inside them, although the manufacturer
 can do so.  This is fundamentally incompatible with the aim of
@@ -57,6 +61,7 @@ have designed this version of the GPL to prohibit the practice for those
 products.  If such problems arise substantially in other domains, we
 stand ready to extend this provision to those domains in future versions
 of the GPL, as needed to protect the freedom of users.
+
 
   Finally, every program is threatened constantly by software patents.
 States should not allow patents to restrict development and use of
@@ -86,8 +91,10 @@ in a fashion requiring copyright permission, other than the making of an
 exact copy.  The resulting work is called a "modified version" of the
 earlier work or a work "based on" the earlier work.
 
+
   A "covered work" means either the unmodified Program or a work based
 on the Program.
+
 
   To "propagate" a work means to do anything with it that, without
 permission, would make you directly or secondarily liable for
@@ -100,7 +107,8 @@ public, and in some countries other activities as well.
 parties to make or receive copies.  Mere interaction with a user through
 a computer network, with no transfer of a copy, is not conveying.
 
-  An interactive user interface displays "Appropriate Legal Notices"
+  An
+ interactive user interface displays "Appropriate Legal Notices"
 to the extent that it includes a convenient and prominently visible
 feature that (1) displays an appropriate copyright notice, and (2)
 tells the user that there is no warranty for the work (except to the
@@ -131,6 +139,7 @@ implementation is available to the public in source code form.  A
 (if any) on which the executable work runs, or a compiler used to
 produce the work, or an object code interpreter used to run it.
 
+
   The "Corresponding Source" for a work in object code form means all
 the source code needed to generate, install, and (for an executable
 work) run the object code and to modify the work, including scripts to
@@ -144,6 +153,7 @@ linked subprograms that the work is specifically designed to require,
 such as by intimate data communication or control flow between those
 subprograms and other parts of the work.
 
+
   The Corresponding Source need not include anything that users
 can regenerate automatically from other parts of the Corresponding
 Source.
@@ -152,6 +162,7 @@ Source.
 same work.
 
   2. Basic Permissions.
+
 
   All rights granted under this License are granted for the term of
 copyright on the Program, and are irrevocable provided the stated
@@ -171,6 +182,7 @@ not control copyright.  Those thus making or running the covered works
 for you must do so exclusively on your behalf, under your direction
 and control, on terms that prohibit them from making any copies of
 your copyrighted material outside their relationship with you.
+
 
   Conveying under any other circumstances is permitted solely under
 the conditions stated below.  Sublicensing is not allowed; section 10
@@ -192,6 +204,7 @@ modification of the work as a means of enforcing, against the work's
 users, your or third parties' legal rights to forbid circumvention of
 technological measures.
 
+
   4. Conveying Verbatim Copies.
 
   You may convey verbatim copies of the Program's source code as you
@@ -204,6 +217,7 @@ recipients a copy of this License along with the Program.
 
   You may charge any price or no price for each copy that you convey,
 and you may offer support or warranty protection for a fee.
+
 
   5. Conveying Modified Source Versions.
 
@@ -241,6 +255,7 @@ used to limit the access or legal rights of the compilation's users
 beyond what the individual works permit.  Inclusion of a covered work
 in an aggregate does not cause this License to apply to the other
 parts of the aggregate.
+
 
   6. Conveying Non-Source Forms.
 
