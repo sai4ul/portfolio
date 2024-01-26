@@ -82,7 +82,6 @@ Live Demo <a href="https://sai4ul.github.io/portfolio-starter-kit/" target="_bla
 
 ```
 
-
 ## Contributors
 
 Thanks to these wonderful people!
